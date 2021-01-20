@@ -1,0 +1,18 @@
+package com.devsuperior.hrpayroll.services;
+
+import com.devsuperior.hrpayroll.entities.Payment;
+
+import org.springframework.stereotype.Service;
+
+/**
+* PaymentService
+*/
+@Service
+public class PaymentService {
+
+	public Payment getPayment(Long workerId, Integer days){
+		return new Payment("Teste", 200.0, days);
+	}
+
+	
+}
